@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Flash Card App</property>
+    <property name="default-width">700</property>
+    <property name="default-height">250</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="btn_next">
+            <property name="label">gtk-media-next</property>
+            <property name="name">btn_next</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">The next flashcard.</property>
+            <property name="use-stock">True</property>
+            <signal name="clicked" handler="on_btn_next_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">475</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_previous">
+            <property name="label">gtk-media-previous</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Previous flash card.</property>
+            <property name="use-stock">True</property>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_flip">
+            <property name="label" translatable="yes">Flip</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Flip the flash card.</property>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lbl1">
+            <property name="name">lbl1</property>
+            <property name="width-request">450</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="tooltip-text" translatable="yes">Definition</property>
+            <property name="label" translatable="yes">Test Text</property>
+            <property name="width-chars">9</property>
+            <property name="max-width-chars">9</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans 12"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="normal"/>
+              <attribute name="foreground" value="#1c1c7171d8d8"/>
+              <attribute name="background" value="#5e5e5c5c6464"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">125</property>
+            <property name="y">25</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="radio_known">
+            <property name="label" translatable="yes">Known</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">radio_unknown</property>
+            <signal name="toggled" handler="on_radio_known_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="radio_unknown">
+            <property name="label" translatable="yes">Unknown</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

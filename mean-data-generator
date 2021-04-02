@@ -1,0 +1,7 @@
+from random import randint
+
+size_of_data_set = 10
+lower_bound = 7
+upper_bound = 21
+
+for x in range(size_of_data_set):
